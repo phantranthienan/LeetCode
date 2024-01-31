@@ -7,5 +7,9 @@
 
 def nextGreaterElements(self, nums):
     n = 2 * len(nums)
-    
+    res = [-1] * len(nums)
+    stack = []
     for i in range(n):
+        while stack and nums[stack[-1]] < nums[i % len(nums)]:
+            res[stack.pop()] = nums[i % len(nums)]
+        stack.append(i % len(nums))
