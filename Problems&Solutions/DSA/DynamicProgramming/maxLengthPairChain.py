@@ -18,7 +18,3 @@ def greedyLongestChain(pairs):
             finish = pairs[i][1]
 
     return count
-
-#dynamic approach 
-def dynamicLongestChain(pairs):
-    
