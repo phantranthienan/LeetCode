@@ -46,9 +46,8 @@ def validArrangement2(pairs):
             
     ans = []
     def findEulerPath(x): 
-        while graph[x]: findEeulerPath(graph[x].pop()) 
+        while graph[x]: findEulerPath(graph[x].pop()) 
         ans.append(x)
-    
     findEulerPath(x)
     ans.reverse()
     return [[ans[i], ans[i+1]] for i in range(len(ans)-1)]
