@@ -1,6 +1,4 @@
 # 5. Longest Palindromic Substring
-# Given a string s, return the longest 
-# palindromic substring in s.
 def longestPalindrome(s):
     n = len(s)
     dp = [[1]*n for _ in range(n)]

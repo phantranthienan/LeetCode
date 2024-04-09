@@ -1,6 +1,4 @@
 # 300. Longest Increasing Subsequence
-# Given an integer array nums, return the length of the longest strictly increasing 
-# subsequence.
 def lengthOfLIS(nums):
     n = len(nums)
     listDp = [1] * len(nums)
